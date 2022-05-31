@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 {
+            /* Da para mudar de um box Level par box inline apenas colocando um (display:inline;)*/
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 150%;
+            background-color: rgb(211, 211, 226);
+            height: 200px;
+            width: 200px;
+  
+            /* podemos simplificar esses três comandos com shothand.
+            border-width: 5px;
+            border-style: solid;
+            border-color:;*/
+            border:5px solid  rgb(199, 117, 128);
+            
+           /* Se for usar a mesma medida podemos colocar apenas um valor que correspoderá as quatro medidas noi centido horário
+            padding-top:20px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            padding-left: 10px;*/
+
+            padding: 10px 20px 10px 20px;
+           /* Podemos as medida da direit e esquerda po "auto" para centralizar a caixa.
+           */
+            /*margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;*/
+            margin: 10px auto 10px auto;
+            
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: aqua;
+        }
+        p {
+          background-color: aqua;
+
+        }
+        a {
+             /* Da para mudar de um box Level par box inlinelevel para muda as caracteristicas normais de um link in apenas colocando um (display:block;) e um (display:inline;)*/
+            border-width: 3px;
+            border-style: solid;
+            border-color: rgba(220, 18, 28, 0.535); 
+           cursor:col-resize;
+            font-size: 150%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>exemplo de caixa box-level</h1>
+
+<p> Parágrafos tb são exemplos box-level, mas, os <a href="#">links</a>. São exemplos de box-inlevel </p>
+   
+</body>
+</html>

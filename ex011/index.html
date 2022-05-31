@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML5</title>
+</head>
+<body>
+     <h1> Reproduzindo audio</h1>
+     <p>Vamos aprender a reproduzir audios</p>
+
+    <!-- controles basico para reprodusir audios..-->
+   <audio src="audio/flaxenHair.mp3" controls autoplay></audio>
+
+   <!--configurar para vários formatos e evitar o formato "wav" pois é muito pesado -->
+    <audio preload="metadata"autoplay controls loop>
+        <source src="audio/kalimba.mp3" type="audio/mpeg">
+        <source src="audio/kalimba.mp3" type="audio/ogg">
+        <source src="audio/kalimba.mp3" type="audio/wav">
+        <p>Seu navegador não consergue carregar esse tipo de mídia</p>
+        <a href="audio/kalimba.mp3">Clique aqui para baixar o arquivo</a>
+    </audio>
+
+    <h1>IMAGEMS DINÂMICAS</h1>
+    <p>Tente abrir uma imagem</p>
+    <!--A teg picture soucer para inserir várias imagens para tamanhos diferentes de telas
+    sempre obedecendo a ordem crescente ou descente da imagem  -->
+    <picture>
+         <source media="(min-width:1050px)" srcset="imagens/gig.png">
+         <source media="(min-width:750px)" srcset="imagens/gim1.png">
+         <source media="(min-width:122px )" srcset="imagens/gip1.png"> 
+        <img src="imagens/gip.png " alt="Imagem flexivel" style="width:auto;">
+    </picture>
+    <br>
+
+    
+</body>
+</html>

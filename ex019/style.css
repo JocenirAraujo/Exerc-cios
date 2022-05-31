@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* tudo em HTML for "id"= *(id="principal")*, 
+em CSS "#" *(h1#principal)* 
+Só pode haver um ID por página
+   tudo em HTML for "Class", em CSS é "." 
+   podemos colocar várias "Class" na mesma
+*/
+body{
+    background-color: rgb(105, 235, 235);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1#principal {
+    background-color: rgb(132, 163, 196);
+    text-align: center;
+}
+h1{
+    color: rgb(96, 141, 141);
+}
+h2{
+    color: rgb(70, 156, 156);
+}
+.basico{
+    color:rgb(204, 195, 69)
+}
+.intermediario{
+    color:rgb(136, 136, 230)
+
+}
+.avancado{
+color: rgba(179, 56, 56, 0.837);
+}

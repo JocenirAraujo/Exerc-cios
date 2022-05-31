@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando Com Links</title>
+</head>
+<body>
+    <h1>Usando links Externos</h1>
+    <!--Para criar links externo que não pertença a sua página
+        recomenda-se acrescentar logo após o link, 
+        o "target="_blanck" e o "rel="external". 
+        Para indicar ao navegador que é um link externo. "-->
+     <!--Se não a sua aba será sobreposta -->
+    <p>
+    Acesse ao links externo de
+    <a href="https://youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" target="_blanck" rel="external">Músicas</a
+    </p>
+    <p>Você pode acessar ao link externo <a href="https://youtube.com/cursoemvideo/">Vídeos gratuiotos</a></p>
+     <h1>Usando links internos</h1>            <!-- para acesar as paginas detro do envelopamento use 
+    Contro/espaço--> 
+    <!-- Para ajudar aos sistemas de busta usamos Rel="next"(Para Proxima pag)-->                            
+     <P> Esta e a primera págia se quiser acessar oa outra click <a href="pag001.html" rel="next">Aqui</a></P>
+     <!-- Para ir a uma página criada dentro de uma pasta, tem que indicar o caminho"noticias/pag002.html" -->
+     <!-- Para evitar de Abrir varia págias Usamos teg self-->
+     <p>Você pode a cessar a segunda página<a href="noticias/pag002.html" target="self">Ativivdades</a> </p>
+     <H1>Links Para Dowload</H1>
+     <ul>
+         <!--Com o link abra uma arquivo indepentente é molhor usa as tegs (target="_blanck" rel="external") Para abrir uma nova pagina-->
+         <li><a href="Livros/meulivropdf.pdf"download="meulivropdf" type="aplication/pdf"target="_blanck" rel="external">Baixar o livro</a></li>
+     </ul>
+
+</body>
+
+</html>
