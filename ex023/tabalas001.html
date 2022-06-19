@@ -11,6 +11,7 @@
         }
         table{
             width: 400px;
+            height: 400px;
             /*colllapse= mantem as celulas unidas*/
             border-collapse: collapse;
             border: 3px solid blue;
@@ -18,12 +19,19 @@
         td{
            border: 1px solid black;
            padding: 8px; 
+           text-align: top; /*Alinhamento horisontal*/
+           vertical-align: text-top; /*Alinhamento vertical*/
         }
         tr.linhas{
             background-color: grey;
         }
         td.dados{
             background-color: pink;
+        }
+        td.numero{
+            text-align: right;
+            text-align: center;
+           vertical-align: middle;
         }
 
     </style>
@@ -54,7 +62,7 @@
             <td> c3</td>
         </tr>
         <tr> <!-- quarta linha--> 
-            <td> A4</td>
+            <td class="numero"> 4</td>
             <td> b4</td>
             <td> c4</td>
         </tr>
