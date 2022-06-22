@@ -12,8 +12,21 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            /*position: relative; Define o posicionamento dos dados da coluna é ogatório  e configurar
+            thead > tr > th {
+            position: sticky;
+            top:0;
+            background-color: black;}
+            */
+            position: relative;
+        }
+        thead > tr > th {
+            position: sticky;
+            top:0;
+            background-color: black;
 
         }
+        th
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -25,7 +38,17 @@
         td.nun{
             text-align: right;
         }
-         
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color:lightslategray ;
+        /*para colocar um efeito zebrado usamos ":nth-child(odd) odd-Par ou even-impar" e outras configrações como: 2n,2n-1*/    
+        }
+        tbody >tr:nth-child(odd){
+            background-color: lightgrey;
+        }
+
     </style>
 </head>
 <body>
@@ -40,10 +63,14 @@
         -->
 </body>
       <table>
+        <caption>População das unidades federativa </caption>
+
           <thead>
             <tr>
-                <th>Estado</th>
-                <th> População</th>
+                <!-- O "scope" é uam teg semâncotica que define a referência do título dos mecanismos de busca-->
+                <th scope="col">Estado</th> 
+                <!-- Configuração local da populção -->
+                <th scope="col" style="width: 100px;"> População</th>
             </tr>
           </thead>
           <tbody>
@@ -164,10 +191,48 @@
           </tbody>
           <tfoot>
             <tr>
-                <th> Total de Habitantes</th>
+                <th scope="row"> Total de Habitantes</th>
                 <td class="nun"><strong>213.317.639
                 </strong></td>
             </tr>
           </tfoot>
       </table>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et, at harum temporibus possimus accusamus quis est. Ducimus dolores eos aliquam dolorem repellat cum similique aliquid nemo, fuga voluptates sapiente?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et, at harum temporibus possimus accusamus quis est. Ducimus dolores eos aliquam dolorem repellat cum similique aliquid nemo, fuga voluptates sapiente?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et, at harum temporibus possimus accusamus quis est. Ducimus dolores eos aliquam dolorem repellat cum similique aliquid nemo, fuga voluptates sapiente?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et, at harum temporibus possimus accusamus quis est. Ducimus dolores eos aliquam dolorem repellat cum similique aliquid nemo, fuga voluptates sapiente?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et, at harum temporibus possimus accusamus quis est. Ducimus dolores eos aliquam dolorem repellat cum similique aliquid nemo, fuga voluptates sapiente?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et, at harum temporibus possimus accusamus quis est. Ducimus dolores eos aliquam dolorem repellat cum similique aliquid nemo, fuga voluptates sapiente?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et, at harum temporibus possimus accusamus quis est. Ducimus dolores eos aliquam dolorem repellat cum similique aliquid nemo, fuga voluptates sapiente?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et, at harum temporibus possimus accusamus quis est. Ducimus dolores eos aliquam dolorem repellat cum similique aliquid nemo, fuga voluptates sapiente?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et, at harum temporibus possimus accusamus quis est. Ducimus dolores eos aliquam dolorem repellat cum similique aliquid nemo, fuga voluptates sapiente?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et, at harum temporibus possimus accusamus quis est. Ducimus dolores eos aliquam dolorem repellat cum similique aliquid nemo, fuga voluptates sapiente?
+      </p>
+
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et, at harum temporibus possimus accusamus quis est. Ducimus dolores eos aliquam dolorem repellat cum similique aliquid nemo, fuga voluptates sapiente?
+      </p>
+        
+</body>
+
 </html>
