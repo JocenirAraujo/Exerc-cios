@@ -23,12 +23,24 @@
             border: 1px solid gray;
             padding: 10px;
         }
+        .nome{
+            background-color: yellow;
+        }
+        col.idade{
+            background-color: orange;
+        }
     </style>
 </head>
 <body>
     <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade" span="2">
+            <col class="prof">
+        </colgroup>
         <caption> Cadatro</caption>
-        
+        <!-- Para copiae colar em várias tegues. use "control C " em seguida aperte o "alt" Clique em cada local desejado e clique em "control V" -->
         <tr>
             <th scope="col">Nome</th>
             <th scope="col">sexo</th>
@@ -41,7 +53,30 @@
             <td>25</td>
             <td>Jornalista</td>
         </tr>
-        
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>f</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Otavio</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Nutricionista</td>
+        </tr>
     </table>
 
 </body>
