@@ -5,14 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript</title>
+    <style>
+       body{
+        background-color: azure;
+       }
+    </style>
 </head>
 <body>
-    <a href="#" onclick="Clicou ">Clic em mim</a>
-    <div id="saida">  </div>
+    <a href="#" onclick="clicou()">Clique em mim</a>
+
+    <div id="saida"> </div>
+
     <script>
-        function Clicou() {
-         s= window.document.getElementById("saida") 
-         s.innerhtml += ' <p> Você Clicou</p> '
+        function Clicou(){
+         s = window.document.getElementById("saida") 
+         s.innerhtml += '<p> Você Clicou</p>'
         }
     </script>
     
